@@ -1,0 +1,68 @@
+<!--  Name: Zhu Lu  -->
+<!--  Email: Zhu_lu@student.uml.edu -->
+<!-- This is my html file in which i made a form and a header and some divs-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Scribble</title>
+      <!-- Adding Css-->
+    <link rel="stylesheet" href="./css/style.css">
+      <!-- adding boot strap-->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!--jq-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+   <link href=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <!-- Adding js-->
+   <script src="./javascript/stuff.js"></script>
+   </head>
+<body>
+    <!-- This is going  put boxes on the screen that allows thing to be dropped into it-->
+    <div class="jumbotron text-center footer">
+      <img src="./Image/cat.gif" alt="cat" class="cat" id="cat1">
+      <img src="./Image/cat.gif" alt="cat" class="cat" id="cat2">
+      <h2>Drag and Drop</h2>
+      <p>Drag the image back and forth.</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+        <div id="board" class="board">
+        <div class ="box"id ="box1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box2" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box3" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box4" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box5" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box6" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box7" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box8" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box9" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box10" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box11" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box12" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box13" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box14" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <div class ="box"id ="box15" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+      </div>
+      </div>
+      <div class="col-sm-12">
+      <div id="Text"></div>
+      </div>
+   <div class="col-sm-12">
+    <div id="Image" ondrop="drop2(event)" ondragover="allowDrop2(event)">
+   </div>
+      </div>
+      <button onclick="randT()"> Next Word </button>
+      <button onclick="randT2()"> reset </button>
+          </div>
+         </div>
+</body>
+</html>
